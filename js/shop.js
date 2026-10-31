@@ -2,13 +2,14 @@ const grid = document.getElementById("products-grid");
 
 // 1. Display Products
 function displayProducts() {
-  products.forEach((product) => {
-    const card = document.createElement("div");
-    card.classList.add("product-card");
-
+  products.forEach(product => {
+    const card = document.createElement('div');
+    card.classList.add('product-card');
+    
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name}">
       <div class="card-content">
+        <span class="category-tag">${product.category}</span>
         <h3>${product.name}</h3>
         <p class="price">R${product.price}</p>
         <p>${product.description}</p>
