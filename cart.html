@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Tech | Your Cart</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">Nexus Tech</a>
+    </div>
+    <nav>
+      <a href="cart.html" class="cart-link">
+        Cart (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main class="cart-page">
+    <h1>Your Shopping Cart</h1>
+    
+    <div class="cart-layout">
+      <!-- Left side: List of items -->
+      <div class="cart-items" id="cart-items-container">
+        <!-- Cart items will be injected here by JavaScript -->
+      </div>
+
+      <!-- Right side: Order Summary -->
+      <div class="cart-summary">
+        <h2>Order Summary</h2>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cart-subtotal">R0</span>
+        </div>
+        <div class="summary-row">
+          <span>Shipping</span>
+          <span>Free</span>
+        </div>
+        <hr>
+        <div class="summary-row total">
+          <span>Total</span>
+          <span id="cart-total">R0</span>
+        </div>
+        <button class="btn checkout-btn" onclick="checkout()">Proceed to Checkout</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Load scripts in order! products.js must load first for the cart to know what items are -->
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

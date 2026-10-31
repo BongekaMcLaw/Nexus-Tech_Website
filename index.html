@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Tech | Shop</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">Nexus Tech</a>
+    </div>
+    <nav>
+      <a href="cart.html" class="cart-link">
+        Cart (<span id="cart-count">0</span>)
+      </a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Premium Tech Gear</h1>
+      <p>Upgrade your setup today.</p>
+    </section>
+
+    <section class="products-section">
+      <div class="products-grid" id="products-grid">
+        <!-- Products will be injected here by JavaScript -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Load scripts in order! products.js must load first -->
+  <script src="js/products.js"></script>
+  <script src="js/shop.js"></script>
+</body>
+</html>
